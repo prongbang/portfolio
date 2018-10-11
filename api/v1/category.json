@@ -1,0 +1,163 @@
+{
+    "category": [
+        "mobile",
+        "web"
+    ],
+    "mobile": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "title": "Mobile",
+        "android": {
+            "title": "Android",
+            "app": [
+                {
+                    "name": "Phuket Smart City",
+                    "path": "/portfolio/images/mobile/so-phuket/android",
+                    "cover": "/portfolio/images/mobile/so-phuket/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.touchtechnologies.smarttouristcard",
+                    "size": 8,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "เบอร์ดี๊ดี",
+                    "path": "/portfolio/images/mobile/berdd/android",
+                    "cover": "/portfolio/images/mobile/berdd/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.prongbang.berdd",
+                    "size": 3,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "BKK Fast & Clear",
+                    "path": "/portfolio/images/mobile/bkk-fast/android",
+                    "cover": "/portfolio/images/mobile/bkk-fast/android/1.png",
+                    "link": "#",
+                    "size": 8,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Golder",
+                    "path": "/portfolio/images/mobile/golder/android",
+                    "cover": "/portfolio/images/mobile/golder/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.prongbang.golder",
+                    "size": 3,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Hotel Connect",
+                    "path": "/portfolio/images/mobile/hotel-connect/android",
+                    "cover": "/portfolio/images/mobile/hotel-connect/android/1.png",
+                    "link": "#",
+                    "size": 2,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Noodang Voice Control",
+                    "path": "/portfolio/images/mobile/noodang/android",
+                    "cover": "/portfolio/images/mobile/noodang/android/1.png",
+                    "link": "#",
+                    "size": 1,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Phuket Rescuer",
+                    "path": "/portfolio/images/mobile/phuket-rescuer/android",
+                    "cover": "/portfolio/images/mobile/phuket-rescuer/android/1.png",
+                    "link": "#",
+                    "size": 7,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "See it Live Thailand",
+                    "path": "/portfolio/images/mobile/see-it-live/android",
+                    "cover": "/portfolio/images/mobile/see-it-live/android/1.png",
+                    "link": "#",
+                    "size": 4,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Smart City Guide",
+                    "path": "/portfolio/images/mobile/smart-city-guide/android",
+                    "cover": "/portfolio/images/mobile/smart-city-guide/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.touchtechnologies.smartcityguide",
+                    "size": 6,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Smart Gate Platform",
+                    "path": "/portfolio/images/mobile/smart-gate/android",
+                    "cover": "/portfolio/images/mobile/smart-gate/android/1.png",
+                    "link": "#",
+                    "size": 3,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Thai Halal",
+                    "path": "/portfolio/images/mobile/thai-halal/android-ios",
+                    "cover": "/portfolio/images/mobile/thai-halal/android-ios/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=th.or.nfi.thaihalal&hl=en_US",
+                    "size": 8,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Wifi Scanner",
+                    "path": "/portfolio/images/mobile/wifi-scanner/android",
+                    "cover": "/portfolio/images/mobile/wifi-scanner/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.prongbang.wifi.scanner",
+                    "size": 1,
+                    "ext": "png",
+                    "description": "See more"
+                }
+            ]
+        },
+        "ios": {
+            "title": "IOS",
+            "app": [
+                {
+                    "name": "Thai Halal",
+                    "path": "/portfolio/images/mobile/thai-halal/android-ios",
+                    "cover": "/portfolio/images/mobile/thai-halal/android-ios/1.png",
+                    "link": "https://itunes.apple.com/th/app/thai-halal/id1364001892?mt=8",
+                    "size": 8,
+                    "ext": "png",
+                    "description": "See more"
+                }
+            ]
+        }
+    },
+    "web": {
+        "title": "Web",
+        "app": [
+            {
+                "name": "Miner T00Ls",
+                "path": "/portfolio/images/web/miner-tools",
+                "cover": "/portfolio/images/web/miner-tools/1.png",
+                "link": "https://miner-tools.com",
+                "size": 1,
+                "ext": "png",
+                "description": "See more"
+            },
+            {
+                "name": "Touch IoT",
+                "path": "/portfolio/images/web/touch-iot",
+                "cover": "/portfolio/images/web/touch-iot/1.png",
+                "link": "https://touch-iot.herokuapp.com",
+                "size": 1,
+                "ext": "png",
+                "description": "See more"
+            }
+        ]
+    }
+}
