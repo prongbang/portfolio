@@ -13,6 +13,15 @@
             "title": "Android",
             "app": [
                 {
+                    "name": "Weather Forecast",
+                    "path": "/portfolio/images/mobile/weather/android",
+                    "cover": "/portfolio/images/mobile/weather/android/1.png",
+                    "link": "https://play.google.com/store/apps/details?id=com.prongbang.weatherforecast",
+                    "size": 5,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
                     "name": "Phuket Smart City",
                     "path": "/portfolio/images/mobile/so-phuket/android",
                     "cover": "/portfolio/images/mobile/so-phuket/android/1.png",
