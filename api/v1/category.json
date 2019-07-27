@@ -15,7 +15,7 @@
                 {
                     "name": "Weather Forecast",
                     "path": "/images/mobile/weather/android",
-                    "cover": "/images/mobile/weather/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/weather/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.weatherforecast",
                     "size": 5,
                     "ext": "png",
@@ -24,7 +24,7 @@
                 {
                     "name": "Phuket Smart City",
                     "path": "/images/mobile/so-phuket/android",
-                    "cover": "/images/mobile/so-phuket/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/so-phuket/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.touchtechnologies.smarttouristcard",
                     "size": 8,
                     "ext": "png",
@@ -33,7 +33,7 @@
                 {
                     "name": "เบอร์ดี๊ดี",
                     "path": "/images/mobile/berdd/android",
-                    "cover": "/images/mobile/berdd/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/berdd/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.berdd",
                     "size": 3,
                     "ext": "png",
@@ -42,7 +42,7 @@
                 {
                     "name": "BKK Fast & Clear",
                     "path": "/images/mobile/bkk-fast/android",
-                    "cover": "/images/mobile/bkk-fast/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/bkk-fast/android/1.png",
                     "link": "#",
                     "size": 8,
                     "ext": "png",
@@ -51,7 +51,7 @@
                 {
                     "name": "Golder",
                     "path": "/images/mobile/golder/android",
-                    "cover": "/images/mobile/golder/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/golder/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.golder",
                     "size": 3,
                     "ext": "png",
@@ -60,7 +60,7 @@
                 {
                     "name": "Hotel Connect",
                     "path": "/images/mobile/hotel-connect/android",
-                    "cover": "/images/mobile/hotel-connect/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/hotel-connect/android/1.png",
                     "link": "#",
                     "size": 2,
                     "ext": "png",
@@ -69,7 +69,7 @@
                 {
                     "name": "Noodang Voice Control",
                     "path": "/images/mobile/noodang/android",
-                    "cover": "/images/mobile/noodang/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/noodang/android/1.png",
                     "link": "#",
                     "size": 1,
                     "ext": "png",
@@ -78,7 +78,7 @@
                 {
                     "name": "Phuket Rescuer",
                     "path": "/images/mobile/phuket-rescuer/android",
-                    "cover": "/images/mobile/phuket-rescuer/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/phuket-rescuer/android/1.png",
                     "link": "#",
                     "size": 7,
                     "ext": "png",
@@ -87,7 +87,7 @@
                 {
                     "name": "See it Live Thailand",
                     "path": "/images/mobile/see-it-live/android",
-                    "cover": "/images/mobile/see-it-live/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/see-it-live/android/1.png",
                     "link": "#",
                     "size": 4,
                     "ext": "png",
@@ -96,7 +96,7 @@
                 {
                     "name": "Smart City Guide",
                     "path": "/images/mobile/smart-city-guide/android",
-                    "cover": "/images/mobile/smart-city-guide/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/smart-city-guide/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.touchtechnologies.smartcityguide",
                     "size": 6,
                     "ext": "png",
@@ -105,7 +105,7 @@
                 {
                     "name": "Smart Gate Platform",
                     "path": "/images/mobile/smart-gate/android",
-                    "cover": "/images/mobile/smart-gate/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/smart-gate/android/1.png",
                     "link": "#",
                     "size": 3,
                     "ext": "png",
@@ -114,7 +114,7 @@
                 {
                     "name": "Thai Halal",
                     "path": "/images/mobile/thai-halal/android-ios",
-                    "cover": "/images/mobile/thai-halal/android-ios/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/thai-halal/android-ios/1.png",
                     "link": "https://play.google.com/store/apps/details?id=th.or.nfi.thaihalal&hl=en_US",
                     "size": 8,
                     "ext": "png",
@@ -123,7 +123,7 @@
                 {
                     "name": "Wifi Scanner",
                     "path": "/images/mobile/wifi-scanner/android",
-                    "cover": "/images/mobile/wifi-scanner/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/wifi-scanner/android/1.png",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.wifi.scanner",
                     "size": 1,
                     "ext": "png",
@@ -137,7 +137,7 @@
                 {
                     "name": "Thai Halal",
                     "path": "/images/mobile/thai-halal/android-ios",
-                    "cover": "/images/mobile/thai-halal/android-ios/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/thai-halal/android-ios/1.png",
                     "link": "https://itunes.apple.com/th/app/thai-halal/id1364001892?mt=8",
                     "size": 8,
                     "ext": "png",
@@ -157,7 +157,7 @@
                 {
                     "name": "Miner T00Ls",
                     "path": "/images/web/miner-tools",
-                    "cover": "/images/web/miner-tools/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/web/miner-tools/1.png",
                     "link": "https://miner-tools.com",
                     "size": 1,
                     "ext": "png",
@@ -166,7 +166,7 @@
                 {
                     "name": "Touch IoT",
                     "path": "/images/web/touch-iot",
-                    "cover": "/images/web/touch-iot/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/web/touch-iot/1.png",
                     "link": "https://touch-iot.herokuapp.com",
                     "size": 1,
                     "ext": "png",
