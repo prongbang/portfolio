@@ -203,9 +203,9 @@ img.hover-shadow {
       </div>
     </div>
     <div class="">
-        <ul id="mobile" class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-            <!--portfolio item-->
-        </ul>
+        <div id="mobile">
+          <!--portfolio item-->
+        </div>
     </div>
     <div>
         <ul id="web" class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
@@ -240,36 +240,66 @@ img.hover-shadow {
   .then(function(json) {
     let mobile = document.querySelector("#mobile");
     mobile.innerHTML = ``;
-    json.mobile.android.app.forEach(function(p) {
-      console.log(p.path)
-      mobile.innerHTML += `
-        <li>
-            <figure> 
-              <img src="${p.cover}" alt="${p.name}" style="cursor:pointer;" onclick="openModal('${p.path}', ${p.size}, '${p.ext}');" />
-              <figcaption>
-                <a href="${p.link}"><h2><span>${p.name}</span></h2></a>
-              </figcaption>
-              <p><a href="${p.link}">See more...</a></p>
-            </figure>
-        </li>
-        `;
-    });
+    for (pl of json.mobile.platforms) {
+      let title = json.mobile[pl].title;
+      
+      let content = `
+        <div class="masonry">
+          <h2>#${title}</h2>
+        </div>
+      `;
+
+      let item = `<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">`
+
+      json.mobile[pl].app.forEach(function(p) {
+        content += `
+          <li>
+              <figure> 
+                <img src="${p.cover}" alt="${p.name}" style="cursor:pointer;" onclick="openModal('${p.path}', ${p.size}, '${p.ext}');" />
+                <p>Platforms: ${title}</p>
+                <figcaption>
+                  <a href="${p.link}"><h2><span>${p.name}</span></h2></a>
+                </figcaption>
+                <p><a href="${p.link}">See more...</a></p>
+              </figure>
+          </li>
+          `;
+      });
+      item += `</ul>`
+
+      mobile.innerHTML += content + item;
+    }
 
     let web = document.querySelector("#web");
     web.innerHTML = "";
-    json.web.app.forEach(function(p) {
-      web.innerHTML += `
-        <li>
-            <figure> 
-              <img src="${p.cover}" alt="${p.name}" style="cursor:pointer;" onclick="openModal('${p.path}', ${p.size}, '${p.ext}');"/>
-              <figcaption>
-                <a href="${p.link}"><h2><span>${p.name}</span></h2></a>
-              </figcaption>
-              <p><a href="${p.link}">See more...</a></p>
-            </figure>
-        </li>
-        `;
-    });
+    
+    for (pl of json.web.platforms) {
+      let title = json.web[pl].title;
+      let content = `
+        <div class="masonry">
+          <h2>#${title}</h2>
+        </div>
+      `;
+
+      let item = `<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">`
+
+      json.web[pl].app.forEach(function(p) {
+        content += `
+          <li>
+              <figure>
+                <img src="${p.cover}" alt="${p.name}" style="cursor:pointer;" onclick="openModal('${p.path}', ${p.size}, '${p.ext}');"/>
+                <p>Platforms: ${title}</p>
+                <figcaption>
+                  <a href="${p.link}"><h2><span>${p.name}</span></h2></a>
+                </figcaption>
+                <p><a href="${p.link}">See more...</a></p>
+              </figure>
+          </li>
+          `;
+      });
+      item += `</ul>`;
+      web.innerHTML += content + item;
+    }
   });
 </script>
 <script>

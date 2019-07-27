@@ -147,26 +147,32 @@
         }
     },
     "web": {
+        "platforms": [
+            "web"
+        ],
         "title": "Web",
-        "app": [
-            {
-                "name": "Miner T00Ls",
-                "path": "/portfolio/images/web/miner-tools",
-                "cover": "/portfolio/images/web/miner-tools/1.png",
-                "link": "https://miner-tools.com",
-                "size": 1,
-                "ext": "png",
-                "description": "See more"
-            },
-            {
-                "name": "Touch IoT",
-                "path": "/portfolio/images/web/touch-iot",
-                "cover": "/portfolio/images/web/touch-iot/1.png",
-                "link": "https://touch-iot.herokuapp.com",
-                "size": 1,
-                "ext": "png",
-                "description": "See more"
-            }
-        ]
+        "web": {
+            "title": "Web",
+            "app": [
+                {
+                    "name": "Miner T00Ls",
+                    "path": "/portfolio/images/web/miner-tools",
+                    "cover": "/portfolio/images/web/miner-tools/1.png",
+                    "link": "https://miner-tools.com",
+                    "size": 1,
+                    "ext": "png",
+                    "description": "See more"
+                },
+                {
+                    "name": "Touch IoT",
+                    "path": "/portfolio/images/web/touch-iot",
+                    "cover": "/portfolio/images/web/touch-iot/1.png",
+                    "link": "https://touch-iot.herokuapp.com",
+                    "size": 1,
+                    "ext": "png",
+                    "description": "See more"
+                }
+            ]
+        }
     }
 }
