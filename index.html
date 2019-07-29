@@ -1,71 +1,154 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Portfolio" />
+    <title>เดฟไปวัน ๆ | Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="canonical" href="." />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My Portfolio">
-  <title>เดฟไปวัน ๆ | Portfolio</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-  <link rel="canonical" href=".">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-</head>
-
-<body>
-  <div id="app" class="container">
-    <h1 class="title">My Portfolio</h1>
-    <template v-for="c in port.category">
-      <template v-for="(p, i) in port[c].platforms">
-        <h2>#{{port[c][p].title}}</h2>
-
-        <div class="columns is-multiline">
-          <div class="column is-one-third" v-for="(a, i) in port[c][p].app">
-            <div>
-              <img :src="port[c][p].app[i].cover" :alt="port[c][p].app[i].name">
+  <body>
+    <div id="app" class="container">
+      <section class="section">
+        <p class="title is-1">Portfolio</p>
+        <template v-for="c in port.category">
+          <template v-for="(p, i) in port[c].platforms">
+            <p class="title is-4">#{{ port[c][p].title }}</p>
+            <div class="columns is-multiline">
+              <div class="column is-one-third" v-for="(a, i) in port[c][p].app">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <img
+                        style="cursor: pointer;"
+                        v-on:click="preview(port[c][p].app[i], port[c][p].title)"
+                        :src="port[c][p].app[i].cover"
+                        :alt="port[c][p].app[i].name"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-4">{{ port[c][p].app[i].name }}</p>
+                        <p class="subtitle is-6">
+                          <span class="tag is-primary">
+                            {{ port[c][p].title }}
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p>
+                        <a :href="a.link">{{ a.description }}</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h2>{{port[c][p].app[i].name}}</h2>
-            <p>
-              <i v-if="port[c][p].title == 'Android'" class="fab fa-android"></i>
-              <i v-if="port[c][p].title == 'IOS'" class="fab fa-apple"></i> 
-              {{port[c][p].title}}
-            </p>
-            <p><a target="_blank" :href="a.link">See more...</a></p>
-          </div>
+          </template>
+        </template>
+      </section>
+      <div class="modal" v-bind:class="{'is-active':isActive}">
+        <div class="modal-background"></div>
+        <div class="container" style="overflow: auto;">
+          <section class="section">
+            <h1 class="title" style="color: #fff;">{{ app.name }}</h1>
+            <h2 class="subtitle" style="color: #fff;">{{ app.platforms }}</h2>
+            <div class="columns is-multiline">
+              <div
+                class="column"
+                :class="{'is-one-third': app.isOneThird}"
+                v-for="number in app.size"
+              >
+                <img
+                  :src="app.path + '/' + number + '.' + app.ext"
+                  :alt="app.name"
+                />
+              </div>
+            </div>
+          </section>
         </div>
-      </template>
-    </template>
-  </div>
-  <footer>
-    <script>
-      var app = new Vue({
-        el: '#app',
-        data: {
-          port: {
-            category: []
-          }
-        },
-        created: function () {
-          this.getPortfolio();
-        },
-        methods: {
-          getPortfolio: function () {
-            let self = this;
-            fetch("api/v1/category.json").then(function (response) {
-                return response.json();
-              })
-              .then(function (json) {
-                self.port = json;
-              });
-          }
-        }
-      });
-    </script>
-  </footer>
-</body>
+        <button
+          @click="close"
+          class="modal-close is-large"
+          style="background: #6d6d6d;"
+        ></button>
+      </div>
+    </div>
 
+    <footer>
+      <script>
+        var app = new Vue({
+          el: "#app",
+          data: {
+            port: {
+              category: []
+            },
+            isActive: false,
+            app: {
+              path: "",
+              size: 0,
+              ext: ""
+            }
+          },
+          created: function() {
+            this.getPortfolio();
+          },
+          methods: {
+            preview: function(a, platforms) {
+              let path = a.path;
+              let size = a.size;
+              let ext = a.ext;
+
+              let isOneThird = false;
+              if (size >= 3) {
+                isOneThird = true;
+              }
+
+              this.app = {
+                path: path,
+                size: size,
+                ext: ext,
+                name: a.name,
+                isOneThird: isOneThird,
+                platforms: platforms
+              };
+              console.log(this.app);
+              this.launch();
+            },
+            launch: function() {
+              this.isActive = true;
+            },
+            close: function() {
+              this.isActive = false;
+            },
+            getPortfolio: function() {
+              let self = this;
+              fetch("api/v1/category.json")
+                .then(function(response) {
+                  return response.json();
+                })
+                .then(function(json) {
+                  self.port = json;
+                });
+            }
+          }
+        });
+      </script>
+    </footer>
+  </body>
 </html>
