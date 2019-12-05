@@ -51,10 +51,10 @@
                 {
                     "name": "Photo ME",
                     "path": "https://prongbang.github.io/portfolio/images/mobile/photome/android",
-                    "cover": "https://prongbang.github.io/portfolio/images/mobile/photome/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/photome/android/1.webp",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.photome",
                     "size": 8,
-                    "ext": "png",
+                    "ext": "webp",
                     "description": "See more"
                 },
                 {
