@@ -51,10 +51,10 @@
                 {
                     "name": "Golder",
                     "path": "https://prongbang.github.io/portfolio/images/mobile/golder/android",
-                    "cover": "https://prongbang.github.io/portfolio/images/mobile/golder/android/1.png",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/golder/android/1.webp",
                     "link": "https://play.google.com/store/apps/details?id=com.prongbang.golder",
-                    "size": 3,
-                    "ext": "png",
+                    "size": 2,
+                    "ext": "webp",
                     "description": "See more"
                 },
                 {
