@@ -155,6 +155,15 @@
                     "size": 1,
                     "ext": "png",
                     "description": "See more"
+                },
+                {
+                    "name": "E-Paper",
+                    "path": "https://prongbang.github.io/portfolio/images/mobile/epaper/android",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/epaper/android/1.png",
+                    "link": "#",
+                    "size": 4,
+                    "ext": "png",
+                    "description": "See more"
                 }
             ]
         },
