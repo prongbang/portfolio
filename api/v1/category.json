@@ -234,6 +234,15 @@
                     "size": 1,
                     "ext": "png",
                     "description": "See more"
+                },
+                {
+                    "name": "E-Paper Backend",
+                    "path": "https://prongbang.github.io/portfolio/images/web/e-paper",
+                    "cover": "https://prongbang.github.io/portfolio/images/web/e-paper/1.png",
+                    "link": "#",
+                    "size": 5,
+                    "ext": "png",
+                    "description": "See more"
                 }
             ]
         }
