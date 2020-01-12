@@ -17,12 +17,20 @@
     ></script>
     <link rel="canonical" href="." />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .tag:not(body).is-primary.is-light {
+          background-color: #ebfffc;
+          color: #00947e;
+      }
+    </style>
   </head>
 
   <body>
     <div id="app" class="container">
       <section class="section">
         <p class="title is-1">Portfolio</p>
+        <p class="subtitle"><a href="https://prongbang.github.io">เดฟไปวันๆ</a></p>
+        <br>
         <template v-for="c in port.category">
           <template v-for="(p, i) in port[c].platforms">
             <p class="title is-4">#{{ port[c][p].title }}</p>
@@ -47,6 +55,9 @@
                           <span class="tag is-primary">
                             {{ port[c][p].title }}
                           </span>
+                          <template v-for="stack in a.stack">
+                            &nbsp;<span class="tag is-primary is-light">{{ stack }}</span>
+                          </template>
                         </p>
                       </div>
                     </div>
