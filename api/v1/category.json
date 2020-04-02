@@ -18,7 +18,7 @@
                     "cover": "https://prongbang.github.io/portfolio/images/mobile/uchoose/android/1.webp",
                     "link": "https://play.google.com/store/apps/details?id=com.krungsri.uchoose",
                     "size": 5,
-                    "ext": "png",
+                    "ext": "webp",
                     "stack": ["Native"],
                     "description": "See more"
                 },
