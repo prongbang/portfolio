@@ -287,6 +287,16 @@
                     "ext": "png",
                     "stack": ["Nuxt", "Golang", "Docker"],
                     "description": "See more"
+                },
+                {
+                    "name": "COVID-19 DAILY",
+                    "path": "https://prongbang.github.io/portfolio/images/web/covid-19-daily",
+                    "cover": "https://prongbang.github.io/portfolio/images/web/covid-19-daily/1.png",
+                    "link": "https://prongbang.github.io/covid19-daily/index.html#/",
+                    "size": 1,
+                    "ext": "png",
+                    "stack": ["Dart", "Flutter"],
+                    "description": "See more"
                 }
             ]
         }
