@@ -211,6 +211,16 @@
                     "ext": "png",
                     "stack": ["Native"],
                     "description": "See more"
+                },
+                {
+                    "name": "COVID-19 DAILY",
+                    "path": "https://prongbang.github.io/portfolio/images/mobile/covid-19-daily/android",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/covid-19-daily/android/1.png",
+                    "link": "#",
+                    "size": 3,
+                    "ext": "png",
+                    "stack": ["Flutter"],
+                    "description": "See more"
                 }
             ]
         },
@@ -233,6 +243,16 @@
                     "cover": "https://prongbang.github.io/portfolio/images/mobile/golder/android/1.png",
                     "link": "#",
                     "size": 2,
+                    "ext": "png",
+                    "stack": ["Flutter"],
+                    "description": "See more"
+                },
+                {
+                    "name": "COVID-19 DAILY",
+                    "path": "https://prongbang.github.io/portfolio/images/mobile/covid-19-daily/ios",
+                    "cover": "https://prongbang.github.io/portfolio/images/mobile/covid-19-daily/ios/1.png",
+                    "link": "#",
+                    "size": 3,
                     "ext": "png",
                     "stack": ["Flutter"],
                     "description": "See more"
